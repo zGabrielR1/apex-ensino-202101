@@ -2,6 +2,8 @@
 
 # Uma função é um bloco de código que pode ser chamado
 # em qualquer lugar do nosso projeto
+
+# def showGoodMornigMessage
 def show_good_morning_message():
     print("Good Morning")
 
@@ -22,11 +24,13 @@ def calculate_order_price(value, discount=0):
 
 
 def total_sum(*args):
+    print(type(args))
     return sum(args)
 
-
 def show_personal_data(**kwargs):
-    print(kwargs)
+    print(type(kwargs))
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
 
 
 if __name__ == '__main__':
