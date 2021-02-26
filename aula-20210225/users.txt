@@ -1,0 +1,2 @@
+cod;nome;valor;sexo
+1;José;456,45;M
